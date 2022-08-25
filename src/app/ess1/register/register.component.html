@@ -1,0 +1,53 @@
+
+<body>
+    <div id="main" class="main">
+        <header><img src="../../../assets/images/ESS.jpg" alt=""></header><br>
+       <div class="cont">
+            <form  #addForm="ngForm" (ngSubmit) = "createEmployee(addForm)">
+                <!-- <label for="fname">First name:</label><br>
+                <input type="text"   id="firstname" class="name" name="fname" placeholder="FirstName"><br>
+                
+                <label for="lname">Last name:</label><br>
+                <input type="text"   id="lostname" class="name" name="lname" placeholder="LostName"><br><br> -->
+               
+                <!-- <label for="lname">Full name:</label><br>
+                <input type="text"  style="text-transform: uppercase;" id="fullname" class="fullname" name="lname" placeholder="FullName"><br><br> -->
+                 
+                <label for="lname" >E-mail:</label><br>
+                <input type="text" id="email" class="email"  ngModel   name="email"  placeholder="aaa12@email.com"><br><br>
+
+                <label for="lname" >Password:</label><br>
+                <input type="text" id="pass" class="pass"  ngModel name="pass"  placeholder="Aaa@123"><br><br>
+
+<!-- 
+                <label for="dept">Role:</label>
+                <input type="select" id="dept" list="data"class="dept" placeholder="select" autocomplete="off">
+                <datalist id="data">
+                  <option value="Developer">Developer</option>
+                  <option value="Tester">Tester</option>
+                  <option value="Devops">Devops</option>
+                  <option value="System-Admin">System-Admin</option>
+                </datalist>
+                
+                <br><br> -->
+
+                <!-- <label for="male">Male:</label>
+                <input type="radio" id="gen" class="gen" name="genname" >&nbsp;&nbsp;
+
+                <label for="lname">Female:</label>
+                <input type="radio" id="gen" class="gen" name="genname" ><br><br> -->
+
+
+               
+                <!-- <label for="lname">Subscription:</label><br>
+                <textarea  type="text" id="area" class="area" name="area" placeholder="write own words" ></textarea><br><br> -->
+
+                <!-- <button class="btn" type="button" id="close" data-dismiss="modal">Close</button> &nbsp;&nbsp; -->
+                <button  type="submit" id="btn"  [disabled]="addForm.invalid" class="btn"  value="Submit">Submit</button>
+              </form> 
+        </div> <br><br>
+       
+<footer><marquee behavior="scroll" direction="left">Fill this form</marquee></footer>
+</div>
+
+
